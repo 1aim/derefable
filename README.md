@@ -10,7 +10,7 @@ specify which field you want to be deref'ed to with the `#[deref]` and allow mut
 dereferencing with `#[deref(mutable)]`.
 
 ## Deriving `std::ops::Deref`
-```ignore
+```rust
 use std::collections::HashMap;
 
 use derefable::Derefable;
@@ -29,7 +29,7 @@ fn main() {
 ```
 
 ## Deriving `std::ops::DerefMut`
-```ignore
+```rust
 use std::collections::HashMap;
 
 use derefable::Derefable;
