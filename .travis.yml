@@ -1,0 +1,14 @@
+language: rust
+sudo: required
+dist: trusty
+rust:
+    - stable
+    - beta
+    - nightly
+cache: cargo
+services: postgresql
+before_script:
+    - sudo -u postgres psql -c 'create database test;'
+matrix:
+    allow_failures:
+        - rust: nightly
