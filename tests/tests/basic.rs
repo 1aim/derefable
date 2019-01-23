@@ -1,4 +1,4 @@
-use derefable_derive::Derefable;
+use derefable::Derefable;
 
 #[derive(Derefable)]
 struct Foo {
